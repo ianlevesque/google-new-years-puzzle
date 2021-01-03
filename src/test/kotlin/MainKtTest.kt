@@ -56,4 +56,16 @@ class MainKtTest {
     fun cracking() {
         assertEquals("anagram", crackPassword("nr\$aaagm"))
     }
+
+    @Test
+    fun decrypting() {
+        assertEquals("anagram", decrypt("nr\$aaagm"))
+    }
+
+    @Test
+    fun rotateArray() {
+        val array = "elloH".toCharArray();
+        rotateArray(array);
+        assertArrayEquals("Hello".toCharArray(), array);
+    }
 }
